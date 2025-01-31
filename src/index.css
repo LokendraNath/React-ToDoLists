@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+/* Tailwind CSS v4.0 imports */
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Custom classes */
+@layer components {
+  .custom-task-container {
+    @apply mt-10 max-w-[400px] mx-auto flex flex-col items-center content-center rounded-2xl p-[20px] text-white;
+  }
+
+  .custom-li {
+    @apply flex items-center text-[23px] bg-white text-black rounded-[5px] py-3 mb-3 px-2;
+  }
+
+  .custom-right-circle {
+    @apply flex items-center gap-x-[10px];
+  }
+
+  .custom-y {
+    @apply font-bold w-7 h-7 rounded-[50%] place-items-center relative overflow-hidden bg-neutral-950 transition-all duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:scale-x-90 active:scale-y-110;
+  }
+  .custom-wrt-dlt {
+    @apply font-bold w-7 h-7 rounded-[50%] place-items-center cursor-pointer bg-neutral-950 text-sm text-white shadow-lg shadow-neutral-500/20 transition active:scale-[.95];
+  }
+
+  .custom-task-text {
+    @apply font-semibold text-[18px];
+  }
+
+  .custom-input {
+    @apply border px-8 pl-4 h-12 bg-white text-gray-800 placeholder:text-gray-400 font-semibold rounded-[8px] outline-none placeholder:font-normal;
+  }
+}
