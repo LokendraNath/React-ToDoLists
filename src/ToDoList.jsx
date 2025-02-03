@@ -8,11 +8,13 @@ function ToDoList({ tasks, setTasks }) {
   function inputChange(event) {
     setInputText(event.target.value);
   }
+
   function handleKeyDown(e) {
     if (e.key === "Enter") {
       addTask();
     }
   }
+
   function addTask() {
     if (!inputText.trim()) {
       alert("Please Enter a Task");

@@ -85,7 +85,7 @@ export function TaskItems({ tasks, setTasks }) {
                 <ArrowBigDownDash className="w-5" />
               </button>
               <button
-                className="bg-red-700 text-white custom-wrt-dlt"
+                className="text-white bg-red-700 custom-wrt-dlt"
                 onClick={() => deleteTask(index)}
               >
                 <Trash2Icon className="w-5" />
